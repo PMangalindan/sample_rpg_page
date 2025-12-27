@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+/* Use your map's REAL pixel width/height */
+#image-container {
+  width: 1520px;  /* same as image */
+  height: 720px;  /* same as image */
+  position: relative;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+#image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* stretches exactly to container (safe if same size) */
+  display: block;
+}
+
+
+#move-box {
+  width: 16px;
+  height: 32px;
+  background-image: url("images/officeGuy_idle.png");
+  background-repeat: no-repeat;
+
+  transform: scale(5);
+  transform-origin: top left;
+
+  position: absolute;
+}
